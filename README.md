@@ -32,19 +32,6 @@ This notebook implements a clean, performant convolutional neural network (CNN) 
 
 ---
 
-## **Structure**
-
-📂 ML-Research/
-
-├── mnist_notebook_00.ipynb     # Baseline CNN with eval and plotting
-
-├── README.md                   # Readme file (You're here)
-
-└── data/                       # Downloaded datasets (ignored via .gitignore)
-
-└── models/                     # Folder to store models
-
-
 ## 📦 Dependencies
 
 All experiments use **Python ≥3.12** and are tested with:

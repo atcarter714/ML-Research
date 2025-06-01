@@ -1,0 +1,64 @@
+Arial
+Algerian
+Agency FB
+Bradley Hand ITC
+Baskerville Old Face
+Brush Script MT Italic
+Book Antiqua Bold Italic
+Chiller
+Cascadia Code
+Copperplate Gothic Light
+Elephant
+Engravers MT
+Eras Demi ITC
+Edwardian Script ITC
+Footlight MT Light Regular
+Freestyle Script
+French Script MT
+Gigi
+Garamond
+Georgia Pro Bold
+Gloucester MT Extra Condensed
+Harrington
+Helvetica
+High Tower Text
+Haettenschweiler
+Harlow Solid Italic Italic
+Impact
+Ink Free
+Informal Roman
+Jokerman
+Juice ITC
+Javanese Text
+Kristen ITC
+Kunstler Script
+Lato Thin Italic
+Segoe UI
+Mistral
+Magneto Bold
+Matura MT Script Capitals
+Microsoft Himalaya
+Microsoft Sans Serif
+Modern No. 20
+NSimSun
+Niagara Engraved
+Onyx
+OCR A Extended
+Old English Text MT
+Papyrus
+Parchment
+Playbill
+Pristina
+Poor Richard
+Palace Script MT Regular
+Rage Italic
+Segoe Script
+Showcard Gothic
+Snap ITC
+Stencil
+Tempus Sans ITC
+Viner Hand ITC
+Vivaldi Italic
+Vladimir Script
+Utopia
+Yu Gothic Bold

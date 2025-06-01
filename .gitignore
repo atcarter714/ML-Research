@@ -1,5 +1,9 @@
 # Project paths & patterns:
 data/
+houdini/cache/
+houdini/render/
+houdini/output/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

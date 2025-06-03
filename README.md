@@ -16,19 +16,51 @@ This repo is designed as a **sandbox for testing new ideas**, validating theorie
 
 ## 📁 Current Experiments
 
-### `mnist_cal_baseline.ipynb`  
-> **Baseline CNN + Evaluation Framework for Curve Adjustment Layers (CALs)**
+### `mnist_notebook_00.ipynb`  
+> **Minimalist CNN for General-Purpose Experimentation**
 
 This notebook implements a clean, performant convolutional neural network (CNN) for the MNIST digit classification problem, achieving **~99% accuracy** with minimal complexity.
 
-🎯 **Purpose**: Establish a **control model** for upcoming experiments with **Curve Adjustment Layers (CALs)** — custom neural units that deform intermediate activations via learnable curves to improve convergence and generalization.
-
 #### 🔍 Features:
-- ✅ Strong MNIST baseline (~99% acc)
-- 🧱 Modular architecture (ideal for insertion of CALs or custom layers)
-- 📦 Manual + automatic normalization support
-- 📈 Loss curve and batch-wise evaluation visualizations
-- 🧪 Ready for ablation studies and augmentation experiments
+- ✅ Solid MNIST benchmark (~98.9–99.0% test acc)
+- 🧩 Modular design for easy layer or logic injection
+- ➕ Optional integration of synthetic data via included mixing cell
+- 📉 Loss curves and batch-wise metrics for quick validation cycles
+- 🧪 Ideal for rapid iteration and reproducible research
+
+
+---
+
+### `mnist_synthetic_00.ipynb`  
+> **Houdini-Generated Synthetic Dataset Exploration**
+
+Explores a procedurally generated digit dataset created in Houdini and exported for ML purposes.
+
+🧪 **Purpose**: Measure impact of synthesized training data on generalization accuracy.
+
+📊 **Findings**: Adding ~40,960 images (~41% of training data) improved test accuracy to ~99.1%, compared to ~98.9% with MNIST-only training.
+
+---
+
+
+## 🏗 Houdini Data Synthesis Pipeline
+
+Scene: `./houdini/digit_gen_v02.hip`
+
+### Overview:
+- Renders **64 frames** of **8×8 digit sprite sheets** to `$HIP/render`
+- Cuts them into **28×28 grayscale images** using compositing + TOPs
+- Outputs to `$HIP/output/{0..9}` folder structure for label consistency
+
+This procedural pipeline enables data generation in low-data domains and can be adapted to RGB, animation, 3D points, textures, etc.
+
+---
+
+## 💾 Models
+
+- `mnist_cnn.pth` — Trained on MNIST only (5 epochs)
+- `mnist_cnn_01.pth` — Trained on MNIST only (15 epochs)
+- `mnist_cnn_02.pth` — Trained on MNIST + synthetic digits (enhanced result)
 
 ---
 
@@ -39,6 +71,8 @@ All experiments use **Python ≥3.12** and are tested with:
 ```bash
 pip install torch torchvision matplotlib
 ```
+
+([Get Torch Here](https://pytorch.org/get-started/locally/))
 
 🔖 License
 This repository is open-sourced under the MIT License.

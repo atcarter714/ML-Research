@@ -34,7 +34,7 @@ This notebook implements a clean, performant convolutional neural network (CNN) 
 ### `mnist_synthetic_00.ipynb`  
 > **Houdini-Generated Synthetic Dataset Exploration**
 
-Explores a procedurally generated digit dataset created in Houdini and exported for ML purposes.
+Explores a [procedurally generated digit dataset](https://huggingface.co/datasets/Arkaen-AtC/mnist_bakery_data) created in Houdini and exported for ML purposes.
 
 🧪 **Purpose**: Measure impact of synthesized training data on generalization accuracy.
 

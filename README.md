@@ -40,10 +40,15 @@ Explores a procedurally generated digit dataset created in Houdini and exported 
 
 📊 **Findings**: Adding ~40,960 images (~41% of training data) improved test accuracy to ~99.1%, compared to ~98.9% with MNIST-only training.
 
+![synthetic digits example](/media/synth_digits_example1.png)
+
+
 ---
 
 
 ## 🏗 Houdini Data Synthesis Pipeline
+
+![scene](/media/houdini_viewport_01.png)
 
 Scene: `./houdini/digit_gen_v02.hip`
 
@@ -51,6 +56,8 @@ Scene: `./houdini/digit_gen_v02.hip`
 - Renders **64 frames** of **8×8 digit sprite sheets** to `$HIP/render`
 - Cuts them into **28×28 grayscale images** using compositing + TOPs
 - Outputs to `$HIP/output/{0..9}` folder structure for label consistency
+
+![compositing](/media/houdini_img_cops_01.png)
 
 This procedural pipeline enables data generation in low-data domains and can be adapted to RGB, animation, 3D points, textures, etc.
 
